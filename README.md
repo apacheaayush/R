@@ -1,2 +1,2 @@
 # R
-This repository is to save my works in R programming
+This repository is to contains my Data Science works in R.
