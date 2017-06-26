@@ -71,9 +71,9 @@
 # 4. IMPLEMENT & OPTIMISE MODEL
 #------------------------------
   # In the next model, we will remove the predictor "indus".
-  model <- lm(medv ~., - indus, data = training_data)
+  model <- lm(medv ~. - indus, data = training_data)
   summary(model) # "age" has a very high P-value.
-  model <- lm(medv ~., - age, data = training_data)
+  model <- lm(medv ~. - age, data = training_data)
   summary(model) # Every predictor now in the model is significant.
 #---------------------------------------------------------------------------------------------------------------------------------------#
 # 5. MODEL VALIDATION
